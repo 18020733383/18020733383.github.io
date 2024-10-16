@@ -150,12 +150,12 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span>
       </div>
   </nav>
@@ -183,6 +183,160 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://18020733383.github.io/2024/10/14/LabView/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="zgy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zgy的博客">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Zgy的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/14/LabView/" class="post-title-link" itemprop="url">LabView基础</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-10-14 09:10:22" itemprop="dateCreated datePublished" datetime="2024-10-14T09:10:22+08:00">2024-10-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-10-15 17:51:16" itemprop="dateModified" datetime="2024-10-15T17:51:16+08:00">2024-10-15</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="数值输入控件"><a href="#数值输入控件" class="headerlink" title="数值输入控件"></a>数值输入控件</h1><p>右键可以选择<br>右键数字输入 可以限定输入的范围</p>
+<h1 id="复制"><a href="#复制" class="headerlink" title="复制"></a>复制</h1><p>先选中 ctrl+左键拖动</p>
+<h1 id="平铺顺序结构"><a href="#平铺顺序结构" class="headerlink" title="平铺顺序结构"></a>平铺顺序结构</h1><p>右键可以添加帧 每次运行只会运行一帧<br>右键平铺顺序结构可以转换成层叠式顺序（在一格内展示 可选择哪格）</p>
+<h1 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h1><p>在结构里面<br>左上角的n是循环次数 需要创建常量接入<br>左下角的i是当前循环的轮数 可以右键创建显示控件</p>
+<h1 id="波形图表"><a href="#波形图表" class="headerlink" title="波形图表"></a>波形图表</h1><h1 id="While循环"><a href="#While循环" class="headerlink" title="While循环"></a>While循环</h1><p>左下角指示运行次数 右下角输入真或假控制是否运行（注意false才是运行） 按钮控件可以放在while循环里面 这样就可以多次控制</p>
+<h1 id="条件结构"><a href="#条件结构" class="headerlink" title="条件结构"></a>条件结构</h1><p>左边是输入数据根据不同的数据切换不同的结构<br>条件结构可以输入布尔类型（按键）<br>也可以输入数字（整型）直接弄个输入控件接到左边 右键可以添加更多分支 分支后面有，默认的时候默认会选择该分支 一定要有一个默认分支不然报错 可以右键将本分支设为默认<br>a..b 代表从a到b的范围</p>
+<h1 id="在不同地方修改控件的值"><a href="#在不同地方修改控件的值" class="headerlink" title="在不同地方修改控件的值"></a>在不同地方修改控件的值</h1><p>右键 创建 属性节点 值 全部转换为写入</p>
+<h1 id="事件结构"><a href="#事件结构" class="headerlink" title="事件结构"></a>事件结构</h1><p>右键事件添加事件分支<br>比如创建按钮按下事件 在添加事件分支 事件源 控件找到对应按钮 选择值改变<br>左上角添加事件超时时间 如果是-1则无限等待直到事件触发 如果是3000则是等3s 如果还没有事件到来就会执行超时分支</p>
+<h1 id="禁用结构"><a href="#禁用结构" class="headerlink" title="禁用结构"></a>禁用结构</h1><p>相当于注释 在里面的代码会被屏蔽</p>
+<h1 id="停止函数"><a href="#停止函数" class="headerlink" title="停止函数"></a>停止函数</h1><p>应用程序控制 停止控件 赋值为true的时候整个项目停止</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://18020733383.github.io/2024/10/14/2024-10-13/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="zgy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zgy的博客">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Zgy的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/14/2024-10-13/" class="post-title-link" itemprop="url">"2024-10-13"</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-10-14 09:09:27 / 修改时间：09:10:06" itemprop="dateCreated datePublished" datetime="2024-10-14T09:09:27+08:00">2024-10-14</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
