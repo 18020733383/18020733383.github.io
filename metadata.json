@@ -1,0 +1,5 @@
+{
+  "name": "HumanOS Development Manual",
+  "description": "A web-based, interactive, and humorous development manual for the Human Operating System (HumanOS), detailing its hardware, software, known bugs, and system processes.",
+  "requestFramePermissions": []
+}
